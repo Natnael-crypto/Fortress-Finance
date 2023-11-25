@@ -2550,11 +2550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\Project\\BackEnd\\LogService\\LogService.csproj",
+      "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\LogService\\LogService.csproj",
       "projectName": "LogService",
-      "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\Project\\BackEnd\\LogService\\LogService.csproj",
+      "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\LogService\\LogService.csproj",
       "packagesPath": "C:\\Users\\coreofme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\Project\\BackEnd\\LogService\\obj\\",
+      "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\LogService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\coreofme\\AppData\\Roaming\\NuGet\\NuGet.Config"

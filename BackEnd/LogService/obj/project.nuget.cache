@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "15wo00At4bY+M5Jo53rmmhdSJ7ooR/wwKVtAgWkC0EIM6+jnS8Fv+DdJMTIenwEleNIkOdLwtPGOIjhumtsGyw==",
+  "dgSpecHash": "SN6RNjdTb6fFDXwhmVnrGx1AynWYK7KVnsi6GNM+a0UBBmZZgzG64My2OdYrRAH+6yvrV9aUWC5f1hkGqMEUGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coreofme\\Desktop\\.Net\\Project\\BackEnd\\LogService\\LogService.csproj",
+  "projectFilePath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\LogService\\LogService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coreofme\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",

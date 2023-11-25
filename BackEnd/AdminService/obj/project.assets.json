@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\AdminService\\AdminService\\AdminService.csproj",
+      "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\AdminService\\AdminService.csproj",
       "projectName": "AdminService",
-      "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\AdminService\\AdminService\\AdminService.csproj",
+      "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\AdminService\\AdminService.csproj",
       "packagesPath": "C:\\Users\\coreofme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\AdminService\\AdminService\\obj\\",
+      "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\AdminService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\coreofme\\AppData\\Roaming\\NuGet\\NuGet.Config"

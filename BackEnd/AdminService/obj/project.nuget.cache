@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DI0uAqDGP33N7CB819orZL0hPHiS5IHo2E7a2+3s5U+y49TjkaJiFbT4vow06yIBoOSj6+Hs9KNZFNOMg3EUPA==",
+  "dgSpecHash": "1+JsadVGtQFpXRzai3Ns/B+/K6dpeBlRif9Qhcro2heBQSm2xvoEEZEPdsH8V4IhPjJ13LpglDvioiWBDvV1jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\AdminService\\AdminService\\AdminService.csproj",
+  "projectFilePath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\AdminService\\AdminService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\coreofme\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\coreofme\\Desktop\\.Net\\services\\CustomerService\\CustomerService.csproj": {}
+    "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\CustomerService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\coreofme\\Desktop\\.Net\\services\\CustomerService\\CustomerService.csproj": {
+    "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\CustomerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\CustomerService\\CustomerService.csproj",
+        "projectUniqueName": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\CustomerService.csproj",
         "projectName": "CustomerService",
-        "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\CustomerService\\CustomerService.csproj",
+        "projectPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\CustomerService.csproj",
         "packagesPath": "C:\\Users\\coreofme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\services\\CustomerService\\obj\\",
+        "outputPath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\coreofme\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.24, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
