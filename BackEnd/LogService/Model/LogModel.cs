@@ -22,9 +22,7 @@ public class Log{
 
     public string RequestDetail { get; set; }
 
-    public DateTime LogDate { get; set; }
-
-    public DateTime LogTime { get; set; }
+    public string LogDateTime { get; set; }
 
     public string Username { get; set; }
 

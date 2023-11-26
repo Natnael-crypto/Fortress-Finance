@@ -2,13 +2,15 @@ namespace CustomerService.Model;
 
 public class Customer{
 
-    public int AccountNumber { get; set; }
+    public required int AccountNumber { get; set; }
 
-    public double AccountBalance { get; set; }
+    public required string UserName {get; set;}
 
-    public DateTime CreatedDate { get; set; }
+    public required double AccountBalance { get; set; }
 
-    public bool Status { get; set; } /// true=active
+    public required string CreatedDate { get; set; }
 
-    public int Role { get; set; }
+    public required bool Status { get; set; } /// true=active
+
+    public required int Role { get; set; }
 }

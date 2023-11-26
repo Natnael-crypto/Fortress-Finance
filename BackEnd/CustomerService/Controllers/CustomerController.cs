@@ -1,3 +1,4 @@
+using CustomerService.Model;
 using CustomerService.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,6 +27,28 @@ public class CustomerController: ControllerBase{
         return Ok(result);
     }
 
+    [HttpGet("Inactive/{AccountNumber}")]
+    public async Task<IActionResult> InactiveAccount( string AccountNumber)
+    {
+        var result = await _CustomerServices.InActiveCustomer(AccountNumber);
+        if (result == 0)
+        {
+            return NotFound($"{AccountNumber} Not Found");
+        }
+        return Ok($"{AccountNumber} Inactivated");
+    }
+
+    [HttpGet("active/{AccountNumber}")]
+    public async Task<IActionResult> ActiveAccount( string AccountNumber)
+    {
+        var result = await _CustomerServices.ActiveCustomer(AccountNumber);
+        if (result ==0)
+        {
+            return NotFound($"{AccountNumber} Not Found");
+        }
+        return Ok($"{AccountNumber} Activated");
+    }
+
     [HttpGet()]
     public async Task<IActionResult> GetAll()
     {
@@ -35,6 +58,13 @@ public class CustomerController: ControllerBase{
         {
             return NotFound();
         }
+        return Ok(result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateCustomer([FromBody] Customer model)
+    {
+        var result = await _CustomerServices.CreateCustomer(model);
         return Ok(result);
     }
 

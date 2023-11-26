@@ -41,7 +41,7 @@ public class LogServices{
         using (var connection = _logdbcontext.GetConnection())
         {
             connection.Open();
-            return await connection.ExecuteAsync("INSERT INTO LogTable ( LogType, IpAddress, RequestDetail, LogDate, LogTime, Username, Role, DeviceInfo) VALUES ( @LogType, @IpAddress, @RequestDetail, @LogDate, @LogTime, @Username, @Role, @DeviceInfo)", model);
+            return await connection.ExecuteAsync("INSERT INTO LogTable ( LogType, IpAddress, RequestDetail, LogDateTime, Username, Role, DeviceInfo) VALUES ( @LogType, @IpAddress, @RequestDetail, @LogDateTime, @Username, @Role, @DeviceInfo)", model);
         }
     }
 
