@@ -2,11 +2,9 @@ namespace CustomerService.Model;
 
 public class Customer{
 
-    public int ID { get; set; }
+    public int AccountNumber { get; set; }
 
-    public string AcountNumber { get; set; }
-
-    public double AccountBalace { get; set; }
+    public double AccountBalance { get; set; }
 
     public DateTime CreatedDate { get; set; }
 
