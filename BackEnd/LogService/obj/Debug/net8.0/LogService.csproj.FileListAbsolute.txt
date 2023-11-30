@@ -127,3 +127,4 @@ C:\Users\coreofme\Desktop\.Net\ESNS\Fortress-Finance\Project\Fortress-Finance\Ba
 C:\Users\coreofme\Desktop\.Net\ESNS\Fortress-Finance\Project\Fortress-Finance\BackEnd\LogService\obj\Debug\net8.0\LogService.pdb
 C:\Users\coreofme\Desktop\.Net\ESNS\Fortress-Finance\Project\Fortress-Finance\BackEnd\LogService\obj\Debug\net8.0\LogService.genruntimeconfig.cache
 C:\Users\coreofme\Desktop\.Net\ESNS\Fortress-Finance\Project\Fortress-Finance\BackEnd\LogService\obj\Debug\net8.0\ref\LogService.dll
+C:\Users\coreofme\Desktop\.Net\ESNS\Fortress-Finance\Project\Fortress-Finance\BackEnd\LogService\bin\Debug\net8.0\Newtonsoft.Json.dll

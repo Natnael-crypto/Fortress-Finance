@@ -10,6 +10,7 @@ public class LogServices{
         _logdbcontext=logDbContext;
     }
 
+    // TODO Add Authorization To Admin
     public async Task<IEnumerable<Log>> GetAll()
     {
         using (var connection = _logdbcontext.GetConnection())
@@ -19,6 +20,7 @@ public class LogServices{
         }
     }
 
+// TODO Add Authorization To Admin
     public async Task<Log> GetOne(int id)
     {
         using (var connection = _logdbcontext.GetConnection())
@@ -35,13 +37,12 @@ public class LogServices{
         }
     }
 
-
     public async Task<int> Create(Log model)
     {
         using (var connection = _logdbcontext.GetConnection())
         {
             connection.Open();
-            return await connection.ExecuteAsync("INSERT INTO LogTable ( LogType, IpAddress, RequestDetail, LogDateTime, Username, Role, DeviceInfo) VALUES ( @LogType, @IpAddress, @RequestDetail, @LogDateTime, @Username, @Role, @DeviceInfo)", model);
+            return await connection.ExecuteAsync("INSERT INTO LogTable ( LogType, IpAddress, RequestDetail, LogDateTime, Username, DeviceInfo) VALUES ( @LogType, @IpAddress, @RequestDetail, @LogDateTime, @Username, @DeviceInfo)", model);
         }
     }
 

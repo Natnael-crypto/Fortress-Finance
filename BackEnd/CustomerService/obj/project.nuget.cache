@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "suAPZviq74+94LNmnZ6hzKkgzJZDsAQQSYj6/9YcaZUaDXHpPDrxyK4/ZjIfSpuR39l5xfl2AnZrGjGpDE182A==",
+  "dgSpecHash": "kVzpabqQD7RCp5B5V9Nuefjh5j9cLVE2kWN9EWIS6AZkm49evrkiJlymXrRkjcrxPu2XX94euYL7gK7Qcf8GtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\coreofme\\Desktop\\.Net\\ESNS\\Fortress-Finance\\Project\\Fortress-Finance\\BackEnd\\CustomerService\\CustomerService.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\coreofme\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\mysql.data\\8.2.0\\mysql.data.8.2.0.nupkg.sha512",
+    "C:\\Users\\coreofme\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\coreofme\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

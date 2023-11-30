@@ -1,4 +1,4 @@
-namespace LogService.Model;
+namespace AdminService.Model;
 
 
 
