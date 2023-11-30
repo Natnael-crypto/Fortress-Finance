@@ -31,7 +31,7 @@ class Program
                 
                 HttpResponseMessage response = await httpClient.PostAsync(apiUrl, content);
 
-                // Check if the request was successful
+               
                 
             }
             catch (Exception ex)
