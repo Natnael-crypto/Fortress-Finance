@@ -1,0 +1,573 @@
+/*Login-Signup*/
+.user-type {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .user-type-text {
+    font-size: 18px;
+    color: #333; 
+    margin-bottom: 10px; 
+  }
+  
+  .small-button {
+    border: none;
+    color: #fff;
+    background: #b8e3ff;
+    padding: 8px 16px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px; 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .small-button:hover,
+  .small-button:focus {
+    box-shadow: 0 10px 12px rgba(19, 18, 18, 0.1);
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding-bottom: 30px;
+    width: 600px;
+    border-radius: 50px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  .text {
+    color: #b8e3ff;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  .underline {
+    width: 61px;
+    height: 6px;
+    background-color: black;
+    border-radius: 9px;
+  }
+  
+  .inputs {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+  }
+  
+  .input img {
+    margin: 0px 30px;
+  }
+  
+  .input input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(171, 166, 166);
+    font-size: 19px;
+  }
+  
+  .forgot {
+    padding-left: 62px;
+    margin-top: 15px;
+    color: #2294e0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .submit_buttons {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    background: #b8e3ff;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .gray {
+    background: #eaeaea;
+    color: gray;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
+  .toggle-button {
+    text-align: center;
+    cursor: pointer;
+    color: #2294e0;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  
+  
+  /*Dashboard*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+  }
+  
+  .logo {
+    width: 70px; 
+    margin-left: 70px; 
+  }
+  
+  h1{
+    font-family: fantasy;
+    font-weight: 300;
+    vertical-align: middle;
+  }
+  
+  .nav {
+    display: flex;
+    color: rgb(241, 229, 229);
+    background:linear-gradient(#fff,#e3e0e0);
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    padding: 5px;
+    gap: 11rem;
+  }
+  .nav a {
+    text-decoration: none;
+    color: #0f0e0e;
+  }
+  
+  .nav1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .nav2-item,.nav3-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav3 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 1.2rem;
+    padding-bottom: 7rem;
+    font-weight: bold;
+  }
+  
+  
+  .nav2 {
+    display: flex;
+  }
+  
+  .nav2-item {
+    margin-right: 20px;
+  }
+  
+  .nav-icon {
+    width: 20px; 
+    margin-right: 5px;
+  }
+  
+  .nav3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav3-items {
+    margin-top: 10px;
+  }
+  
+  
+  .container {
+    width: 80%;
+    margin: 0;
+    padding:0px;
+    display: flex;
+  }
+  .welcome-container {
+    background:#fff;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    width: 80%;
+    align-items: center;
+  }
+  
+  .welcome h1 ,.user-type h1 {
+    font-size: 35px;
+    color: #0b0a0a;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .welcome p{
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: rgb(181, 181, 80);
+  }
+  
+  .user-info {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .profile-pic {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-top: 10px;
+    margin-right: 10px
+  }
+  
+  .buttons button {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color:#aca8a8;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .account-number{
+    font-size: 20px;
+  }
+  
+  .budget-overview {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .chart-container canvas {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  /*Account Creation*/
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  
+  /*Transfer Page*/
+  .transfer-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .transfer-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .transfer-form {
+    width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transfer-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transfer-form label {
+    margin-bottom: 10px;
+  }
+  
+  .transfer-form input,
+  .transfer-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 400px;
+  
+  }
+  
+  .transfer-form button {
+    padding: 10px;
+    background-color:#8ca38d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .transfer-form button :hover{
+    background-color: #58dc5f;
+  }
+  
+  #successMessage {
+    display: none;
+    margin-top: 20px;
+    color: green;
+  }
+  
+  
+  /*Payments Page*/
+  .payments-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service ,.transaction-history h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .service-buttons {
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  
+  .service-buttons button {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .payment-form {
+    width: 50%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .payment-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-form label {
+    margin-bottom: 10px;
+  }
+  
+  .payment-form input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-form button {
+    padding: 10px;
+    background-color: #8ca38d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .payment-form button :hover{
+    background-color: #58dc5f;
+  }
+  
+  
+  /*Transactions Page*/
+    .transaction-history {
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    th, td {
+      border: 1px solid #aca8a8;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f4f4f4;
+    }
+  .transaction-main {
+    width: 80%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .section {
+    height: 10px;
+    margin-right: 0;
+    background-color: #000;
+  }
+  
+  .transaction-bod {
+    height: 80%;
+    background: #777;
+    border-radius: 20px;
+    padding-bottom: 35rem;
+    margin-left: 10px;
+  }
+  
+  .transaction-disc {
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .transaction-disc-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .transaction-disc-list, li {
+    text-decoration: none;
+    padding: 3px 0 0 0;
+  }
+  
+  .section2 {
+    height: 10px;
+    background-color: #000;
+  }
+  /* Edit Profile */
+  .edit-container {
+    margin-top: 50px;
+  }
+  
+  .edit-form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .edit {
+    background-color: #8ca38d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
