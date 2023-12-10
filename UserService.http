@@ -1,0 +1,6 @@
+@UserService_HostAddress = http://localhost:5056
+
+POST {{UserService_HostAddress}}/User/SignUp
+Accept: application/json
+
+###
