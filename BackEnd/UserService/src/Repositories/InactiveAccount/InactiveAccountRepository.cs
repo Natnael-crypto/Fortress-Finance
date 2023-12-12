@@ -66,13 +66,12 @@ public class InactiveAccountRepository{
             
             using var getDeactivatedCommand = new MySqlCommand
             (
-                $"SELECT id FROM inactive_accounts where account_number = {inactiveAccount.AccountNumber};",
+                $"SELECT account_number FROM inactive_accounts where account_number = {inactiveAccount.AccountNumber};",
                 _connection
             );
             var accountReader = await getDeactivatedCommand.ExecuteReaderAsync();
-            if (await accountReader.ReadAsync())
+            if (accountReader.HasRows)
             {
-                int id = accountReader.GetInt32(accountReader.GetOrdinal("id"));
                 return inactiveAccount;
             }
 
