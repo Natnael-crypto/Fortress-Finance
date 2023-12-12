@@ -55,6 +55,7 @@ public class InactiveAccountRepository{
             {
                 throw new InactiveAccountExistsException();
             }
+            checkInactiveReader.Close();
 
             using var deactivateCommand = new MySqlCommand
             (
