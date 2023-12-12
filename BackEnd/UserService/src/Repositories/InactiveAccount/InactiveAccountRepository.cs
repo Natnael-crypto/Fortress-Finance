@@ -7,10 +7,10 @@ public class InactiveAccountRepository{
     private readonly IConfiguration _configuration;
     private readonly MySqlConnection _connection;
     
-    public InactiveAccountRepository(IConfiguration configuration, MySqlConnection connection)
+    public InactiveAccountRepository(IConfiguration configuration)
     {
         _configuration = configuration;
-        _connection = connection;
+        _connection = new MySqlConnection(_configuration.GetConnectionString("Default"));
         InitializeAsync().Wait();
     }
 
@@ -40,41 +40,43 @@ public class InactiveAccountRepository{
         }
     }
 
-    public async Task<InactiveAccount> DeactivateAccountAsync(InactiveAccountDto inactiveAccount)
+    public async Task<InactiveAccount> DeactivateAccountAsync(InactiveAccount inactiveAccount)
     {
         try
         {
             await _connection.OpenAsync();
+            using var checkInactiveCommand = new MySqlCommand
+            (
+                $"Select account_number from inactive_accounts where account_number = {inactiveAccount.AccountNumber};",
+                _connection
+            );
+            var checkInactiveReader = await checkInactiveCommand.ExecuteReaderAsync();
+            if (checkInactiveReader.HasRows)
+            {
+                throw new InactiveAccountExistsException();
+            }
+
             using var deactivateCommand = new MySqlCommand
             (
-                $"Insert INTO inactive_accounts(account_number, reason, deactivated_by) VALUES '{inactiveAccount.AccountNumber}', '{inactiveAccount.Reason}', '{inactiveAccount.DeactivatedBy}';",
+                $"Insert INTO inactive_accounts(account_number, reason, deactivated_by) VALUES ({inactiveAccount.AccountNumber}, '{inactiveAccount.Reason}', {inactiveAccount.DeactivatedBy});",
                 _connection
             );
             int rowsAffected = await deactivateCommand.ExecuteNonQueryAsync();
             
             using var getDeactivatedCommand = new MySqlCommand
             (
-                $"SELECT id FROM inactive_account where account_number = {inactiveAccount.AccountNumber};",
+                $"SELECT id FROM inactive_accounts where account_number = {inactiveAccount.AccountNumber};",
                 _connection
             );
             var accountReader = await getDeactivatedCommand.ExecuteReaderAsync();
             if (await accountReader.ReadAsync())
             {
                 int id = accountReader.GetInt32(accountReader.GetOrdinal("id"));
-                InactiveAccount newInactiveAccount = new
-                (
-                    id, inactiveAccount.AccountNumber, inactiveAccount.Reason, inactiveAccount.DeactivatedBy
-                );
-                return newInactiveAccount;
+                return inactiveAccount;
             }
 
             throw new Exception();
             
-        }
-        catch(Exception e)
-        {
-            Console.Error.WriteLine($"An error occured during account deactivation: {e.Message}");
-            throw;
         }
         finally
         {

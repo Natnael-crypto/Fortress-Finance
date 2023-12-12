@@ -19,6 +19,11 @@ public class Program
             IConfiguration configuration = provider.GetRequiredService<IConfiguration>();
             return new UserRepository(configuration);
         });
+        builder.Services.AddScoped<InactiveAccountRepository>(provider =>
+        {
+            IConfiguration configuration = provider.GetRequiredService<IConfiguration>();
+            return new InactiveAccountRepository(configuration);
+        });
         
         builder.Services.AddMySqlDataSource(builder.Configuration.GetConnectionString("Default")!);
 

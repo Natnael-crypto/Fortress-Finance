@@ -13,7 +13,7 @@ public class UserController(UserRepository repository) : ControllerBase
 
     [HttpPost("Signup")]
     [Consumes(MediaTypeNames.Application.Json)]
-    [ProducesResponseType<UserDto>(StatusCodes.Status201Created)]
+    [ProducesResponseType<User>(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IResult> SignupAsync(UserDto user){
         try
@@ -58,7 +58,8 @@ public class UserController(UserRepository repository) : ControllerBase
     }
 
     [HttpPost("Logout")]
-    public void Logout(User user){
+    public void Logout(User user)
+    {
         
     }
 }
