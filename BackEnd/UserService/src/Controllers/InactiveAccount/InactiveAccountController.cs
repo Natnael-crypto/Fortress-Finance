@@ -21,7 +21,8 @@ public class InactiveAccountController(InactiveAccountRepository repository): Co
     {
         try
         {
-            return Results.Ok(await _repository.DeactivateAccountAsync(inactiveAccount));
+            return Results.Created($"InactiveAccount/{inactiveAccount.AccountNumber}",
+                await _repository.DeactivateAccountAsync(inactiveAccount));
         }
         catch(Exception e)
         {
@@ -35,6 +36,56 @@ public class InactiveAccountController(InactiveAccountRepository repository): Co
             return Results.BadRequest(problem);
         }
     }
+
+    [Authorize]
+    [HttpGet("InactiveAccounts")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [ProducesResponseType<List<InactiveAccount>>(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IResult> GetInactiveAccountsAsync()
+    {
+        try
+        {
+            List<InactiveAccount> inactiveAccounts = await _repository.GetInactiveAccountsAsync();
+            return Results.Ok(inactiveAccounts);            
+        }
+        catch(Exception e)
+        {
+            ProblemDetails problem = new()
+            {
+                Detail = $"An error occured while fetching inactive account: {e.Message}"
+            };
+            return Results.BadRequest(problem);
+        }
+
+    }
+
+    [Authorize]
+    [HttpDelete("ReactivateAccount")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IResult> ReactivateAccountAsync(InactiveAccount inactiveAccount)
+    {
+        try
+        {
+            int rowsAffected = await _repository.ReactivateAccountAsync(inactiveAccount);
+            return Results.NoContent();
+        }
+        catch(Exception e)
+        {
+            ProblemDetails problem = new();
+            if(e is InactiveAccountNotExistException)
+            {
+                problem.Detail = "The account is not inactive";
+                return Results.BadRequest(problem);
+            }
+            problem.Detail = $"An error occured during account reactivation: {e.Message}";
+            return Results.BadRequest(problem);
+        }
+
+    }
+
 
 
 }

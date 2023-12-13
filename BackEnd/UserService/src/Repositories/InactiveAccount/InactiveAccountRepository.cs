@@ -86,5 +86,71 @@ public class InactiveAccountRepository{
             }
         }
     }
+
+    public async Task<List<InactiveAccount>> GetInactiveAccountsAsync()
+    {
+        List<InactiveAccount> inactiveAccounts = [];
+        try
+        {
+            await _connection.OpenAsync();
+            using var getInactiveCommand = new MySqlCommand
+            (
+                $"Select * from inactive_accounts;",
+                _connection
+            );
+            var accountReader = await getInactiveCommand.ExecuteReaderAsync();
+            while(await accountReader.ReadAsync())
+            {
+                int accountNumber = accountReader.GetInt32(accountReader.GetOrdinal("account_number"));
+                string reason = accountReader.GetString(accountReader.GetOrdinal("reason"));
+                int deactivatedBy = accountReader.GetInt32(accountReader.GetOrdinal("deactivated_by"));
+                InactiveAccount inactiveAccount = new(accountNumber, reason, deactivatedBy);
+                inactiveAccounts.Add(inactiveAccount);
+            }
+            return inactiveAccounts;
+        }
+        finally
+        {
+            if (_connection.State == System.Data.ConnectionState.Open)
+            {
+                _connection.Close();
+            }
+        }
+
+    }
+
+    public async Task<int> ReactivateAccountAsync(InactiveAccount inactiveAccount)
+    {
+        try
+        {
+            await _connection.OpenAsync();
+            using var checkInactiveCommand = new MySqlCommand
+            (
+                $"Select account_number from inactive_accounts where account_number = {inactiveAccount.AccountNumber};",
+                _connection
+            );
+            var checkInactiveReader = await checkInactiveCommand.ExecuteReaderAsync();
+            if (!checkInactiveReader.HasRows)
+            {
+                throw new InactiveAccountNotExistException();
+            }
+            checkInactiveReader.Close();
+
+            using var reactivateCommand = new MySqlCommand
+            (
+                $"Delete FROM inactive_accounts where account_number = {inactiveAccount.AccountNumber}",
+                _connection
+            );
+            int rowsAffected = await reactivateCommand.ExecuteNonQueryAsync();
+            return rowsAffected;
+        }
+        finally
+        {
+            if (_connection.State == System.Data.ConnectionState.Open)
+            {
+                _connection.Close();
+            }
+        }
+    }
     
 }
