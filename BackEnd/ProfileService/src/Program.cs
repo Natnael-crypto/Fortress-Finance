@@ -10,20 +10,21 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-        string _connectionString = builder.Configuration.GetConnectionString("Default")!; 
+        string _connectionString = builder.Configuration.GetConnectionString("Default")!;
 
         // Add services to the container.
 
         builder.Services.AddControllers();
         builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+        builder.Services.AddScoped<ISecurityQuestionRepository, SecurityQuestionRepository>();
+        builder.Services.AddScoped<IAddressRepository, AddressRepository>();
         builder.Services.AddDbContext<ProfileDataContext>(options =>
         {
-           options.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString)); 
+            options.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         });
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
-        
 
         var app = builder.Build();
 
@@ -40,8 +41,6 @@ public class Program
 
         app.MapControllers();
 
-        app.Run();        
+        app.Run();
     }
 }
-
-

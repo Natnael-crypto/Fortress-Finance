@@ -67,3 +67,4 @@
 /home/doodle/OMEGADANCE/Courses/4 - Fourth Year - 1st Semester AAiT/Enterprise Systems and Network Security/Project/FortressFinance/BackEnd/ProfileService/bin/Debug/net8.0/runtimes/win-x86/native/vcruntime140.dll
 /home/doodle/OMEGADANCE/Courses/4 - Fourth Year - 1st Semester AAiT/Enterprise Systems and Network Security/Project/FortressFinance/BackEnd/ProfileService/bin/Debug/net8.0/runtimes/win-x86/native/zlib1.dll
 /home/doodle/OMEGADANCE/Courses/4 - Fourth Year - 1st Semester AAiT/Enterprise Systems and Network Security/Project/FortressFinance/BackEnd/ProfileService/bin/Debug/net8.0/runtimes/win-x86/native/zstd.dll
+/home/doodle/OMEGADANCE/Courses/4 - Fourth Year - 1st Semester AAiT/Enterprise Systems and Network Security/Project/FortressFinance/BackEnd/ProfileService/bin/Debug/net8.0/AutoMapper.dll

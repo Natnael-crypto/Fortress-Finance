@@ -26,7 +26,7 @@ public class ProfileController(IProfileRepository repository) : ControllerBase
         catch (Exception e)
         {
             ProblemDetails problem =
-                new() { Detail = $"An error occurred during Profile creation: {e.Message}" };
+                new() { Detail = $"An error occurred while creating Profile: {e.Message}" };
             return Results.BadRequest(problem);
         }
     }
@@ -45,7 +45,7 @@ public class ProfileController(IProfileRepository repository) : ControllerBase
         catch(Exception e)
         {
             ProblemDetails problem =
-                new() { Detail = $"An error occurred while querying for the Profile: {e.Message}" };
+                new() { Detail = $"An error occurred while fetching Profile: {e.Message}" };
             return Results.BadRequest(problem);
         }
     }

@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "P1W0enNQ9fx8NneDlmZ1hNUxakv+2k6bpt+ZgOvsxGFFXl1dsLwRuG5/fJN5UFJnSytqhJ8wcvwlMAnvN0So0A==",
+  "dgSpecHash": "71+wZYVYqdv/YkFXYoGMIxf7Ifz1icfwr2TccR4p5RaGTScqpcikq8oNYPfmnWB3If2LeQp6+Uo4ATknOXFBCA==",
   "success": true,
   "projectFilePath": "/home/doodle/OMEGADANCE/Courses/4 - Fourth Year - 1st Semester AAiT/Enterprise Systems and Network Security/Project/FortressFinance/BackEnd/ProfileService/ProfileService.csproj",
   "expectedPackageFiles": [
+    "/home/doodle/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/doodle/.nuget/packages/confluent.kafka/2.3.0/confluent.kafka.2.3.0.nupkg.sha512",
     "/home/doodle/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/doodle/.nuget/packages/librdkafka.redist/2.3.0/librdkafka.redist.2.3.0.nupkg.sha512",
+    "/home/doodle/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/doodle/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "/home/doodle/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.2/microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "/home/doodle/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.2/microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",

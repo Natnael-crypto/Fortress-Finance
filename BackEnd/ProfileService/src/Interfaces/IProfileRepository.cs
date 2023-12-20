@@ -5,9 +5,9 @@ namespace ProfileService.Interfaces;
 
 public interface IProfileRepository
 {
-    public Task<Profile> GetProfileByIdAsync(Guid userUuid);
-
     public Task<Profile> CreateProfileAsync(Profile newProfile);
+    
+    public Task<Profile> GetProfileByIdAsync(Guid userUuid);
 
     public Task<Profile> UpdateProfileAsync(Profile updatedProfile);
 
