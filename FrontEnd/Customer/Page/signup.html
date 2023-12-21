@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/signup.js" defer></script>
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="text">Sign Up</div>
+      <div class="underline"></div>
+    </div>
+    <div class="inputs" id="signupInputs">
+      <div class="input">
+        <img src="../Assets/person.png" alt="User">
+        <input type="text" id="fullName" placeholder="Full Name">
+      </div>
+      <div class="input">
+        <img src="../Assets/email.png" alt="Email">
+        <input type="text" id="email" placeholder="Email">
+      </div>
+      <div class="input">
+        <img src="../Assets/password.png" alt="Lock">
+        <input type="password" id="password" placeholder="Password">
+      </div>
+    </div>
+    <div class="submit_buttons">
+      <div class="submit" onclick="handleSignupSubmit()">Sign Up</div>
+    </div>
+    <div class="error" id="fullNameError"></div>
+    <div class="error" id="emailError"></div>
+    <div class="error" id="passwordError"></div>
+    
+  </div>
+</body>
+</html>

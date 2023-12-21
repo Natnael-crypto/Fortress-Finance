@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard | Keyframe Effects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                                                                                                                 
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img  class="logo" src="Assets/logo.jpg">
+            
+        </div>
+        
+        <div class="side-content">
+           
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/profile.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/AccountDetailList.html">
+                            <span class="las la-tasks"></span>
+                            <small>Account Detail List</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/CustomerAccountApproval.html">
+                            <span class="las la-user-friends"></span>
+                            <small>Customer Account Approval</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/CustomerAccountList.html">
+                            <span class="las la-tasks"></span>
+                            <small>Customer Account List</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/Transacton.html">
+                            <span class="las la-tasks"></span>
+                            <small>Transaction List</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="search-input">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                    <div class="user">
+                     <a href="profile.html">
+                  <div class="bg-img" style="background-image: url(https://bootdey.com/img/Content/avatar/avatar1.png)"></div>
+                        </a>
+                    <button style="background-color: green; color: white; font-size: 16px;"><span>Logout</span></button>
+                 </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>Welcome to Fortress Finance!</h1>
+                <small>Home / Dashboard</small>
+            </div>
+            
+            <div class="page-content">
+            
+                <div class="analytics">
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>107,200</h2>
+                            <span class="las la-user-friends"></span>
+                        </div>
+                        <div class="card-progress"  id="customer-approval-card">
+                            <small>Customer Account Approval</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head" id="Account-Detail-card">
+                            <h2>340,230</h2>
+                            
+                           <i class='fa-solid fa-clipboard-list '></i>
+                        </div>
+                        <div class="card-progress">
+                            <small>Account Detail List</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="customer-Account-List">
+                        <div class="card-head">
+                            <h2>653,200</h2>
+                           <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Customer Account List</small>
+                            <div class="card-indicator">
+                                <div class="indicator three" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="Transaction">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Transaction</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Entries</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                            <button>Add record</button>
+                        </div>
+
+                        <div class="browse">
+                           <input type="search" placeholder="Search" class="record-search">
+                            <select name="" id="">
+                                <option value="">Status</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th><span class="las la-sort"></span> Customer</th>
+                                    <th><span class="las la-sort"></span> Total</th>
+                                    <th><span class="las la-sort"></span>  Date</th>
+                                    <th><span class="las la-sort"></span> Account</th>
+                                    <th><span class="las la-sort"></span> Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img"></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        10036758575
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        123749400
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Approved</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#3</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        10036575748
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Approved</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#3</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        138402020284
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                           <button class="btn"> Approved</button> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#4</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        102938475589
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                           <button class="btn"> Approved</button>  
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#4</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        1029384756
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Approved</button>  
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>  
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+        </main>
+        
+    </div>
+   <script src="script.js"> </script> 
+</body>
+</html>
