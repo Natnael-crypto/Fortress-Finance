@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard | Keyframe Effects</title>
+     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                                                                                                                 
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img  class="logo" src="Assets/logo.jpg">
+            
+        </div>
+        
+        <div class="side-content">
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="index2.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/profile.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    
+                    <li>
+                       <a href="/ViewLogin.html">
+                            <span class="las la-tasks"></span>
+                            <small> ViewLogin</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/viewcustomer.html">
+                            <span class="las la-user-friends"></span>
+                            <small>ViewCustomer</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/customeraccount.html">
+                            <span class="las la-tasks"></span>
+                            <small>customer Account</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/Transacton.html">
+                            <span class="las la-tasks"></span>
+                            <small>Transaction List</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                
+                    <label for="search-input">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                    <div class="user">
+                     <a href="profile.html">
+                  <div class="bg-img" style="background-image: url(https://bootdey.com/img/Content/avatar/avatar1.png)"></div>
+                        </a>
+                    <button style="background-color: green; color: white; font-size: 16px;"><span>Logout</span></button>
+                 </div>
+                </div>
+            </div>
+        </header> 
+    </div>
+    
+  <div class="container">
+    <h1>InActive Account of customer</h1>
+    <p>Table of InActive Account of customer</p>               
+  <div class="table-responsive-lg">
+    <table id="transaction-table" class="table mx-auto table-striped">  
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">AccountID</th>
+          <th scope="col">reason</th>
+          <th scope="col">InActiveBy</th>
+          <th scope="col">Date Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>10</td>
+          <td>for security</td>
+          <td>Admin</td>
+          <td>23/12/2023</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>10</td>
+          <td>for security</td>
+          <td>Admin</td>
+          <td>23/12/2023</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>10</td>
+          <td>for security</td>
+          <td>Admin</td>
+          <td>23/12/2023</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>10</td>
+          <td>for security</td>
+          <td>Admin</td>
+          <td>23/12/2023</td>
+          
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>10</td>
+          <td>for security</td>
+          <td>Admin</td>
+          <td>23/12/2023</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  
+  
+   <script src="script.js"> </script> 
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
