@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard | Keyframe Effects</title>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                                                                                                                 
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img  class="logo" src="Assets/logo.jpg">  
+        </div>
+        <div class="side-content">
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="index2.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    
+                    <li>
+                       <a href="/ViewLogin.html">
+                            <span class="las la-tasks"></span>
+                            <small> ViewLogin</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/viewcustomer.html">
+                            <span class="las la-user-friends"></span>
+                            <small>ViewCustomer</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/customeraccount.html">
+                            <span class="las la-tasks"></span>
+                            <small>customer Account</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/Transacton.html">
+                            <span class="las la-tasks"></span>
+                            <small>Transaction List</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-content"> 
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="search-input">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    <div class="user">
+                     <a href="/profile.html">
+                  <div class="bg-img" style="background-image: url(https://bootdey.com/img/Content/avatar/avatar1.png)"></div>
+                        </a>
+                    <button style="background-color: green; color: white; font-size: 16px;"><span>Logout</span></button>
+                 </div>
+                </div>
+            </div>
+        </header>
+        <main>  
+        <div class="page-header">
+                <h1>Welcome to Fortress Finance!</h1>
+                <small>Home / Dashboard</small>
+            </div>
+            
+            <div class="page-content">
+            
+                <div class="analytics">
+                   
+                    <a href="active account.html" class="">
+                    <div class="card" id="customer-Account-List">
+                        <div class="card-head">
+                            <h2>653,200</h2>
+                           <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                        
+                            <small>Active Account</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="viewcustomer.html" class="">
+                    <div class="card" id="customer-Account-List">
+                        <div class="card-head">
+                            <h2>653,200</h2>
+                           <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                        
+                            <small>ViewCustomer</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="inactive account.html" class="">
+                    <div class="card" id="customer-Account-List">
+                        <div class="card-head">
+                            <h2>653,200</h2>
+                           <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                        
+                            <small>Inactive Account</small>
+                            <div class="card-indicator">
+                                <div class="indicator three" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="card" id="Transaction">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <span class="las la-tasks"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Transaction</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="records table-responsive">
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Entries</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                           <button id="addRecordButton">AddActive</button>
+                           <button id="InaddRecordButton" style="display:none">AddINactive</button>
+                        </div>
+                        <div id="activeFormPopup" class="popup" style="display: none;">
+                        <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">ID</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="" value="" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Customer</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefaultUsername">Total</label>
+                             <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">Date</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Account</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Status</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Verify
+                            </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary activeFormSubmitButton" type="submit">Add</button>
+                        </form>
+                        </div>
+                        <div id="InactiveFormPopup" class="popup" style="display: none;">
+                        <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">ID</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="" value="" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Customer</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                            <label for="validationDefaultUsername">Total</label>
+                             <input type="text" class="form-control" id="validationDefault02" placeholder="" value="" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                            <label for="validationDefault03">Date</label>
+                            <input type="text" class="form-control" id="validationDefault03" placeholder="" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationDefault04">Account</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Status</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Verify
+                            </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary InactiveFormSubmitButton" type="submit">Add</button>
+                        </form>
+                        </div>
+                        <div class="browse">
+                           <input type="search" placeholder="Search" class="record-search">
+                            <select id="account-status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+
+                        </div>
+                    </div>
+                   <div class="table1">
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th><span class="las la-sort"></span> Customer</th>
+                                    <th><span class="las la-sort"></span> Total</th>
+                                    <th><span class="las la-sort"></span>  Date</th>
+                                    <th><span class="las la-sort"></span> Account</th>
+                                    <th><span class="las la-sort"></span> Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img"></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        10036758575
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn">Verify</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#2</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        123749400
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Verify</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#3</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        10036575748
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Verify</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#3</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        138402020284
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                           <button class="btn"> Verify</button> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#4</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        102938475589
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                           <button class="btn">Verify</button>  
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#4</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" ></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        1029384756
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <button class="btn"> Verify</button>  
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>  
+                                </tr> 
+                        </tbody>
+                 </table>
+                </div>
+            <div class="container" style="display:none;">
+            <h1>InActive Account of customer</h1>
+            <p>Table of InActive Account of customer</p>               
+            <div class="table-responsive-lg">
+            <table id="transaction-table" class="table mx-auto table-striped">  
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">AccountID</th>
+                <th scope="col">reason</th>
+                <th scope="col">InActiveBy</th>
+                <th scope="col">Date Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>10</td>
+                <td>for security</td>
+                <td>Admin</td>
+                <td>23/12/2023</td>
+                
+                </tr>
+                <tr>
+                <th scope="row">1</th>
+                <td>10</td>
+                <td>for security</td>
+                <td>Admin</td>
+                <td>23/12/2023</td>
+                
+                </tr>
+                <tr>
+                <th scope="row">1</th>
+                <td>10</td>
+                <td>for security</td>
+                <td>Admin</td>
+                <td>23/12/2023</td>
+                
+                </tr>
+                <tr>
+                <th scope="row">1</th>
+                <td>10</td>
+                <td>for security</td>
+                <td>Admin</td>
+                <td>23/12/2023</td>
+                
+                </tr>
+                <tr>
+                <th scope="row">1</th>
+                <td>10</td>
+                <td>for security</td>
+                <td>Admin</td>
+                <td>23/12/2023</td>
+                
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        </div>           
+        </div>
+      </div>
+    </div>          
+    </main>        
+</div>   
+<script>$(document).ready(function() {
+    $('#account-status').change(function() {
+        var selectedOption = $(this).val();
+        
+        if (selectedOption === 'active') {
+            $('.table1').show();
+            $('.container').hide();
+        } else if (selectedOption === 'inactive') {
+            $('.table1').hide();
+            $('.container').show();
+        }
+    });
+});
+document.getElementById("account-status").addEventListener("change", function() {
+var selectedOption = this.value;
+
+var addRecordButton = document.getElementById("addRecordButton");
+
+if (selectedOption === "inactive") {
+    addRecordButton.textContent = "Add Inactive";
+} else {
+    addRecordButton.textContent = "Add Active";
+}
+});
+
+const addActiveButton = document.getElementById("addActiveButton");
+const addInactiveButton = document.getElementById("addInactiveButton");
+const accountStatusSelect = document.getElementById("account-status");
+const activeFormPopup = document.getElementById("activeFormPopup");
+const inactiveFormPopup = document.getElementById("InactiveFormPopup");
+
+addActiveButton.addEventListener("click", () => {
+activeFormPopup.style.display = "block";
+});
+
+addInactiveButton.addEventListener("click", () => {
+inactiveFormPopup.style.display = "block";
+});
+
+
+accountStatusSelect.addEventListener("change", () => {
+const selectedOption = accountStatusSelect.value;
+
+if (selectedOption === "active") {
+activeFormPopup.style.display = "block";
+inactiveFormPopup.style.display = "none";
+} else if (selectedOption === "inactive") {
+activeFormPopup.style.display = "none";
+inactiveFormPopup.style.display = "block";
+}
+});
+
+</script>
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

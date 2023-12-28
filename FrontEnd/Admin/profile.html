@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingDung | Profile Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">                                                                                                                                 
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <img  class="logo" src="Assets/logo.jpg">
+            
+        </div>
+        
+        <div class="side-content">
+           
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="index2.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/profile.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    
+                    <li>
+                       <a href="/ViewLogin.html">
+                            <span class="las la-tasks"></span>
+                            <small> ViewLogin</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/CustomerAccountApproval.html">
+                            <span class="las la-user-friends"></span>
+                            <small>ViewCustomer</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/CustomerAccountList.html">
+                            <span class="las la-tasks"></span>
+                            <small>customer Account</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/Transacton.html">
+                            <span class="las la-tasks"></span>
+                            <small>Transaction List</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="search-input">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                    <div class="user">
+                     <a href="profile.html">
+                  <div class="bg-img" style="background-image: url(https://bootdey.com/img/Content/avatar/avatar1.png)"></div>
+                        </a>
+                    <button style="background-color: green; color: white; font-size: 16px;"><span>Logout</span></button>
+                 </div>
+                </div>
+            </div>
+        </header>   
+    </div>
+    <div class="container-xl px-4 mt-4" id="container1" style="margin-left: 20px; ">
+    <h1 style="margin-top: 70px; text-align:center; font-size:30px; font-style:italic">profile account</h1>
+    <hr class="mt-0 mb-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="card mb-4 mb-xl-0" style="margin-left:120px;">
+                <div class="card-header">Profile Picture</div>
+                <div class="card-body text-center">
+                    
+                    <img class="img-account-profile rounded-circle mb-2" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                    
+                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    
+                    <input type="file" id="uploadInput" style="display: none;" onchange="handleFileUpload(event)">
+                    <button class="btn btn-primary" type="button" onclick="document.getElementById('uploadInput').click()">Upload new image</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            
+            <div class="card mb-4">
+                <div class="card-header">Account Details</div>
+                <div class="card-body">
+                    <form>
+                        
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputUsername">Username </label>
+                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username">
+                        </div>
+                        
+                        <div class="row gx-3 mb-3">
+                            
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputFirstName">First name</label>
+                                <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie">
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLastName">Last name</label>
+                                <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">
+                            </div>
+                        </div>
+                           
+                        <div class="row gx-3 mb-3">
+                            
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputOrgName"> Middle name</label>
+                                <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your middle name" value="">
+                            </div>
+                           
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputLocation">Location</label>
+                                <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="">
+                            </div>
+                        </div>
+                       
+                        <div class="mb-3">
+                            <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                            <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com">
+                        </div>
+                        
+                        <div class="row gx-3 mb-3">
+                            
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputPhone">Phone number</label>
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567">
+                            </div>
+                           
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="inputBirthday">Time Date</label>
+                                <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="" value="06/10/2023">
+                            </div>
+                        </div>
+                       
+                        <button class="btn btn-primary" type="button">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    function handleFileUpload(event) {
+      const file = event.target.files[0];
+      console.log('Uploaded file:', file);
+    }
+  </script>
+</body>
+
+</html>
