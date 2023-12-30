@@ -214,6 +214,7 @@
                             </label>
                             </div>
                         </div>
+                         <button class="btn btn-secondary closeFormButton" type="button">Close</button>
                         <button class="btn btn-primary activeFormSubmitButton" type="submit">Add</button>
                         </form>
                         </div>
@@ -255,6 +256,7 @@
                             </label>
                             </div>
                         </div>
+                         <button class="btn btn-secondary #closeFormButton" type="button">Close</button>
                         <button class="btn btn-primary InactiveFormSubmitButton" type="submit">Add</button>
                         </form>
                         </div>
@@ -511,51 +513,44 @@ $(document).ready(function() {
         var selectedOption = $(this).val();
         
         if (selectedOption === 'active') {
+            $('#addRecordButton').text('AddActive');
+            $('#InaddRecordButton').hide();
             $('.table1').show();
             $('.container').hide();
         } else if (selectedOption === 'inactive') {
+            $('#addRecordButton').text('AddInactive');
+            $('#InaddRecordButton').show();
             $('.table1').hide();
             $('.container').show();
         }
     });
 });
-document.getElementById("account-status").addEventListener("change", function() {
-var selectedOption = this.value;
 
-var addRecordButton = document.getElementById("addRecordButton");
 
-if (selectedOption === "inactive") {
-    addRecordButton.textContent = "Add Inactive";
-} else {
-    addRecordButton.textContent = "Add Active";
-}
+const addActiveButton = document.getElementById('addRecordButton');
+const activeFormPopup = document.getElementById('activeFormPopup');
+const closeFormButton = activeFormPopup.querySelector('.closeFormButton');
+
+addActiveButton.addEventListener('click', function() {
+ 
+  activeFormPopup.style.display = 'block';
 });
 
-const addActiveButton = document.getElementById("addActiveButton");
-const addInactiveButton = document.getElementById("addInactiveButton");
-const accountStatusSelect = document.getElementById("account-status");
-const activeFormPopup = document.getElementById("activeFormPopup");
-const inactiveFormPopup = document.getElementById("InactiveFormPopup");
-
-addActiveButton.addEventListener("click", ()  {
-activeFormPopup.style.display = "block";
+closeFormButton.addEventListener('click', function() {
+  
+  activeFormPopup.style.display = 'none';
+});
+closeFormButton.addEventListener('click', function() {
+ 
+  activeFormPopup.style.display = 'none';
 });
 
-addInactiveButton.addEventListener("click", ()  {
-inactiveFormPopup.style.display = "block";
-});
+const addInactiveButton = document.getElementById('InaddRecordButton');
+const inactiveFormPopup = document.getElementById('InactiveFormPopup');
 
-
-accountStatusSelect.addEventListener("change", ()  {
-const selectedOption = accountStatusSelect.value;
-
-if (selectedOption === "active") {
-activeFormPopup.style.display = "block";
-inactiveFormPopup.style.display = "none";
-} else if (selectedOption === "inactive") {
-activeFormPopup.style.display = "none";
-inactiveFormPopup.style.display = "block";
-}
+addInactiveButton.addEventListener('click', function() {
+ 
+  inactiveFormPopup.style.display = 'block';
 });
 
 </script>
